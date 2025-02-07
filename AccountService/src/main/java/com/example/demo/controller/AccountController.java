@@ -24,6 +24,7 @@ public class AccountController {
 	@PostMapping("/create")
 	public String saveAccount(@RequestBody Account account) {
 		System.out.println("saved");
+		System.out.println("Yes it is saved");
 		return service.createAccount(account);
 	}
 
